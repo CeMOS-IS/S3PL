@@ -1,0 +1,6 @@
+__pycache__
+weights/
+logs/
+results/
+s3pl/data
+*.xml

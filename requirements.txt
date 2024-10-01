@@ -1,0 +1,10 @@
+m2aia
+numpy
+pandas
+tqdm
+torch
+torchvision
+matplotlib
+scikit-learn
+scipy
+pyimzml
