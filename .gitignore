@@ -3,4 +3,5 @@ weights/
 logs/
 results/
 s3pl/data
+.vscode/
 *.xml

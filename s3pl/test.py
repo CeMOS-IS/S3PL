@@ -95,11 +95,9 @@ def test(config, test_indices):
     peak_list = sorted_peak_list[:number_peaks]
 
     resultfolder = 'results/' + training_name + '/'
-    peak_list_folder = folderpath + '/peak_lists/'
     filename_peak_evaluation = resultfolder + 'peak_evaluation_' + dataname + '_' + str(config["n_epochs"]) + 'epochs.txt'
 
     if not os.path.exists('results'): os.mkdir('results')
-    if not os.path.exists(peak_list_folder): os.mkdir(peak_list_folder)
     if not os.path.exists(resultfolder): os.mkdir(resultfolder)
 
     df = pd.DataFrame(peak_list)
@@ -112,6 +110,9 @@ def test(config, test_indices):
         with open(filename_peak_evaluation, 'a') as file:
             file.write(training_name + ':\n')
             file.write('number picked peaks = ' + str(len(peak_list)) + ', Recall/Precision/F1-Score/Correlation-Score\n')
+
+        print(training_name + ':\n')
+        print('number picked peaks = ' + str(len(peak_list)))
 
         for pcc_threshold in [0.3, 0.4, 0.5, 0.6]:
             evaluate_peaks = PeakEvaluationMultipleClasses(dataname, list(range(number_classes)), pcc_threshold, folderpath, peak_list, show_ion_images=False)
@@ -140,9 +141,11 @@ def test(config, test_indices):
             with open(filename_peak_evaluation, 'a') as file:
                 file.write('F1 ' + str(pcc_threshold) + ' = ')
                 file.write(str(round(F1,3)) + '\n')
+            print('F1 ' + str(pcc_threshold) + ' = ' + str(round(F1,3)) + '\n')
 
         mSCF1 = round(np.mean(F1_scores_mixed),3)
         with open(filename_peak_evaluation, 'a') as file:
             file.write('mSCF1 = ' + str(mSCF1) + '\n')
+        print('mSCF1 = ' + str(mSCF1) + '\n')
     
     return mSCF1
