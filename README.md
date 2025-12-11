@@ -9,7 +9,7 @@ Spectrometry Imaging](https://www.google.com)
 [Philipp Weigand](https://scholar.google.com/citations?user=WBCzjgcAAAAJ&hl=de), [Nikolas Ebert](https://scholar.google.de/citations?user=CfFwm1sAAAAJ&hl=de), [Shad A. Mohammed](https://scholar.google.com/citations?user=tVc0nX8AAAAJ&hl=de&oi=ao), [Denis Abu Sammour](https://scholar.google.com/citations?user=RNmOep0AAAAJ&hl=de&oi=ao), [Carsten Hopf](https://scholar.google.com/citations?user=Q8T-d1MAAAAJ&hl=de&oi=ao) & [Oliver Wasenmüller](https://scholar.google.de/citations?user=GkHxKY8AAAAJ&hl=de) \
 **[CeMOS - Research and Transfer Center](https://www.cemos.hs-mannheim.de/ "CeMOS - Research and Transfer Center"), [University of Applied Sciences Mannheim](https://www.english.hs-mannheim.de/the-university.html "University of Applied Sciences Mannheim")**
 
-![alt text](figure/S3PL_Autoencoder_new.jpg)
+![alt text](figure/S3PL_Autoencoder.png)
 
 ## Demo version
 We provide two ways for testing our code with minimal effort:
