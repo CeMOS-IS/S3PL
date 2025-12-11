@@ -19,8 +19,6 @@ https://colab.research.google.com/github/Philipp-Weigand/S3PL-Colab-Demo/blob/ma
 
 2. Docker image on dockerhub, where the enviroment and the Colorectal Adenocarcinoma dataset are already set up. To execute the script, install [Docker](https://www.docker.com/get-started) and run one of the following commands based on your operating system.
 
-Linux / macOS:
-
        # Linux / macOS #
        # CPU #
        docker run --rm -v $(pwd)/results:/workspace/results philippweigand/s3pl:latest
