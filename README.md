@@ -115,7 +115,19 @@ The folder structure should be as follows:
 To use S<sup>3</sup>PL for peak picking, specify the `.imzML` file as the `data_dir` in the `s3pl/config.json` file.
 Then, run the `s3pl/main.py` file:
 
-    python s3pl/main.py
+    python s3pl/main.py \
+    --data_dir "/data/cac/40TopL.imzML" \
+    --number_classes 3 \
+    --eval_picking True \
+    --peaks_per_spectral_patch 256 \
+    --spectral_patch_size 9 \
+    --kernel_depth_d1 51 \
+    --kernel_depth_d2 1 \
+    --n_epochs 10 \
+    --batch_size 16 \
+    --learning_rate 1e-2 \
+    --dropout 0 \
+    --random_seed 1
 
 The resulting peak list will be stored in a `.csv` file in the folder
 
