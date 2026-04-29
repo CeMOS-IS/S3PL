@@ -1,5 +1,9 @@
 # Spatial self-supervised Peak Learning and correlation-based Evaluation of peak picking in Mass Spectrometry Imaging
 
+[![arxiv.org](https://img.shields.io/badge/cs.CV-arXiv%3A2408.14131-B31B1B.svg)](https://arxiv.org/abs/2603.10487)
+[![cite-bibtex](https://img.shields.io/badge/Cite-BibTeX-1f425f.svg)](#citing)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
 S<sup>3</sup>PL is a spatial self-supervised peak learning autoencoder network which performs spatially structured peak picking on profile mass spectrometry imaging (MSI) data. This repository contains the source code for the corresponding paper:
 
 [Spatial self-supervised Peak Learning and
